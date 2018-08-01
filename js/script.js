@@ -25,9 +25,9 @@ function getRandomQuote(array) {
     let quoteNum = Math.floor(Math.random() * 3);
     return array[quoteNum];
     }
-var randomQuote1 = getRandomQuote(quotes);
+var randomQuote = getRandomQuote(quotes);
 
-console.log(randomQuote1)
+console.log(randomQuote)
 
 // Create the printQuote funtion and name it printQuote
 
@@ -38,14 +38,14 @@ function printQuote() {
       let quoteNum = Math.floor(Math.random() * 3);
       return array[quoteNum];
     }
-    var randomQuote1 = getRandomQuote(quotes);
+    var randomQuote = getRandomQuote(quotes);
 
-    let quote1 = '<p class="quote">' + randomQuote1.quote + '</p>';
-    let source1 = '<p class="source">' + randomQuote1.source +
-    '<span class="year">' + randomQuote1.year + '</span></p>';
-    let source2 = '<p class="source">' + randomQuote1.source + '</p>';
+    let quote1 = '<p class="quote">' + randomQuote.quote + '</p>';
+    let source1 = '<p class="source">' + randomQuote.source +
+    '<span class="year">' + randomQuote.year + '</span></p>';
+    let source2 = '<p class="source">' + randomQuote.source + '</p>';
 
-    if (randomQuote1.year === "") {
+    if (randomQuote.year === "") {
         document.getElementById('quote-box').innerHTML = quote1 + source2
     } else {
         document.getElementById('quote-box').innerHTML = quote1 + source1
@@ -54,9 +54,7 @@ function printQuote() {
     //document.getElementById('quote-box').innerHTML = stringOfQuoteProperties;
 }
 
-// printQuote(randomQuote1)
-
-
+printQuote(randomQuote1)
 
 // This event listener will respond to "Show another quote" button clicks
 // when user clicks anywhere on the button, the "printQuote" function is called
