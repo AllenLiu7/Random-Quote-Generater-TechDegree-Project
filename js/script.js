@@ -60,7 +60,7 @@ function printQuote() {
     } else {
         document.getElementById('quote-box').innerHTML = quote1 + source1
     };
-
+//Creat a random background color
     function getRandomColor() {
       var letters = '0123456789ABCDEF';
       var color = '#';
