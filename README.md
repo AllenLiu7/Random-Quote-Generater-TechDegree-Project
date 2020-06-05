@@ -4,4 +4,4 @@
 
 ## Installation
 
-Run the index.js file with web browser
+Run the index.html file with web browser
